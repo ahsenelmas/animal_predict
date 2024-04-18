@@ -28,7 +28,7 @@ def predict_image(model, path_to_img):
     probs = model.predict(data)
     top_prob = probs.max()
     top_pred = probs.argmax()
-    class_names = ['bee', 'elephant', 'giraffe', 'koala', 'orangutan', 'panda', 'panther', 'penguen', 'polar bear', 'turtle', 'rhino']
+    class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck',]
     top_pred = class_names[top_pred]
     return top_prob, top_pred
 
